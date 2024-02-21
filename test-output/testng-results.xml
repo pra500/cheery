@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-21T14:14:59 IST" name="Default suite" finished-at="2024-02-21T14:15:09 IST" duration-ms="10907">
+    <groups>
+    </groups>
+    <test started-at="2024-02-21T14:14:59 IST" name="Default test" finished-at="2024-02-21T14:15:09 IST" duration-ms="10907">
+      <class name="tests1.Newtabopening34Test">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests1.Newtabopening34Test@20435c40]" started-at="2024-02-21T14:14:59 IST" name="beforeClass" finished-at="2024-02-21T14:15:08 IST" duration-ms="8914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="sett8()[pri:0, instance:tests1.Newtabopening34Test@20435c40]" started-at="2024-02-21T14:15:08 IST" name="sett8" finished-at="2024-02-21T14:15:08 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sett8 -->
+        <test-method signature="setyt()[pri:0, instance:tests1.Newtabopening34Test@20435c40]" started-at="2024-02-21T14:15:08 IST" name="setyt" finished-at="2024-02-21T14:15:09 IST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setyt -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests1.Newtabopening34Test@20435c40]" started-at="2024-02-21T14:15:09 IST" name="afterClass" finished-at="2024-02-21T14:15:09 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests1.Newtabopening34Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

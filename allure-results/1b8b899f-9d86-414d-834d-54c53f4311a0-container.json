@@ -1,0 +1,1 @@
+{"uuid":"1b8b899f-9d86-414d-834d-54c53f4311a0","name":"tests1.NewtabopeningTest2","children":["8856c30f-84a1-485f-9df7-afef88b6da4f"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1708150146403,"stop":1708150152920}],"afters":[],"start":1708150146334,"stop":1708150156023}
