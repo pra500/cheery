@@ -18,50 +18,62 @@ import org.testng.annotations.AfterClass;
 
 public class BrokenLinksTest {
 	
-	//need to chk the code
+	
 	WebDriver driver;
 	
   @Test(priority = 0)
-  public void fTest() {
+  public void fTest() throws IOException {
 	  
 	  
 	  
-	 System.out.println(driver.getTitle());
-	  
-  }
-  
-  
-  @Test(priority = 1, dependsOnMethods = {"fTest"})
-  public void f2Test() throws IOException {
-	  
-	  List<WebElement>   links=  driver.findElements(By.tagName("a"));
-	  for(WebElement wb:links)
-	  {
-		  String url=wb.getAttribute("href");
-		  brokenvalidation(url);
-		  
-	  }
-	  
-	  
+	// List <WebElement> list=driver.findElements(By.tagName("a"));
+	 List <WebElement> list=driver.findElements(By.tagName("img"));
+	 
+	 
+	 System.out.println(list.size());
+	 for(WebElement wb:list)
+	 {
+		
+		// String url=wb.getAttribute("href");
+		 String url=wb.getAttribute("src");
+		 gettt(url);
+		 
+	 }  
+	
 	  
   }
   
+    
   
   
   
-  public void  brokenvalidation(String u) throws IOException
-  {
-	  
-	  
-	  URL ur=new URL(u);
-	  
-	  HttpURLConnection hp=(HttpURLConnection)ur.openConnection();
-	  hp.connect();
-	  
-	  
-	  
-	  
-  }
+  
+ public void gettt(String u) throws IOException
+ {
+	 
+	 
+	 
+	 URL ur=new URL(u);
+	 
+	 HttpURLConnection hp=(HttpURLConnection) ur.openConnection();
+	 hp.connect();
+	 int  code=hp.getResponseCode();
+	 
+	 if(code==200)
+	 {
+		 //System.out.println("br not");
+		 System.out.println("img not");
+	 }
+		
+	 else
+	 {
+		 //System.out.println("br");
+		 System.out.println("img");
+	 }
+			 
+ }
+  
+  
   
   
   @BeforeClass
@@ -70,9 +82,9 @@ public class BrokenLinksTest {
 	  driver=new ChromeDriver();	  
 	  driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://freelance-learn-automation.vercel.app/signup");
+		driver.get("https://toolsqa.com/testng/testng-dependent-tests/");
 		
 		
   }

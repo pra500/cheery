@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests1.log4jdemo2Test">
+      <class name="tests1.Retryprac1111Test">
         <methods>
+          <include name="f22Test"/>
           <include name="fTest"/>
+          <include name="tear"/>
+          <include name="set"/>
         </methods>
-      </class> <!-- tests1.log4jdemo2Test -->
+      </class> <!-- tests1.Retryprac1111Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
