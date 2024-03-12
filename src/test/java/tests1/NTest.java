@@ -21,6 +21,8 @@ public class NTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
 		driver.close();
+		
+		//browser closing
 
   }
 }

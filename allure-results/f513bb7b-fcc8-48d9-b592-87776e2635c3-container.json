@@ -1,0 +1,1 @@
+{"uuid":"f513bb7b-fcc8-48d9-b592-87776e2635c3","name":"pac1.NewtttTest.teardown","children":["0e1f1134-d1b5-44bf-930c-3efe5c13b6e3"],"description":"","befores":[],"afters":[{"name":"teardown","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1709977975314,"stop":1709977975314}],"start":1709977975313,"stop":1709977975314}

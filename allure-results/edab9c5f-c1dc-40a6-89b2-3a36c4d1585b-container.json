@@ -1,0 +1,1 @@
+{"uuid":"edab9c5f-c1dc-40a6-89b2-3a36c4d1585b","name":"pac1.NewtttTest.setup","children":["7ae0407b-6cc0-43c1-8a6b-6d3d917bd9fe"],"description":"","befores":[{"name":"setup","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1709977845733,"stop":1709977845733}],"afters":[],"start":1709977845733,"stop":1709977845733}

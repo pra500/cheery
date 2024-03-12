@@ -5,5 +5,7 @@ import org.testng.annotations.Test;
 public class AccountTest {
   @Test
   public void f() {
+	  
+	  syso
   }
 }
