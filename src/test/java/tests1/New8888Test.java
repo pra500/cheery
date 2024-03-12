@@ -23,7 +23,7 @@ public class New8888Test {
 
 		driver.getCurrentUrl();
 
-		List<WebElement> links = driver.findElements(By.tagName("//a"));
+	List<WebElement> links = driver.findElements(By.tagName("//a"));
 
 		System.out.println(links.size());
 
@@ -34,6 +34,8 @@ public class New8888Test {
 		List<WebElement> links3 = driver.findElements(By.tagName("//div"));
 
 		System.out.println(links3.size());
+		
+		
 
 	}
 
@@ -56,6 +58,8 @@ public class New8888Test {
 
 		boolean b = driver.findElement(By.xpath("//div[@class='grid_7 logo pull_1']")).isDisplayed();
 		Assert.assertEquals(b, true);
+		
+		
 
 	}
 
@@ -74,7 +78,8 @@ public class New8888Test {
 	@AfterClass
 	public void afterClass() {
 
-		driver.close();
+		 driver.close();		
+		//driver closed
 
 	}
 
